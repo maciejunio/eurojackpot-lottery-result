@@ -1,11 +1,17 @@
 <template>
   <div class="lotteryResult">
     <div class="buttonWrapper">
-      <button class="button" :disabled="nextDrawsAvailable" @click="nextDraws">
+      <button
+        class="button"
+        id="nextButton"
+        :disabled="nextDrawsAvailable"
+        @click="nextDraws"
+      >
         Next
       </button>
       <button
         class="button"
+        id="previousButton"
         :disabled="previousDrawsAvailable"
         @click="previousDraws"
       >
