@@ -9,7 +9,7 @@ interface Draw {
 export default class LotteryModel {
   draws: Draw[];
 
-  constructor(data: LotteryModel) {
-    this.draws = data.draws;
+  constructor(draws: Draw[]) {
+    this.draws = draws;
   }
 }

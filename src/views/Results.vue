@@ -21,8 +21,8 @@ export default class Results extends Vue {
   private results: Nullable<LotteryModel> = null;
 
   async mounted() {
-    const lotteryService = new LotteryService('eurojackpot', 15);
-    this.results = await lotteryService.fetchResults();
+    const lotteryService = new LotteryService();
+    this.results = await lotteryService.fetchResults('eurojackpot', 15);
   }
 }
 </script>

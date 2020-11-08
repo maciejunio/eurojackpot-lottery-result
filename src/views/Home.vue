@@ -59,9 +59,7 @@
     line-height: 38px;
     font-weight: 300;
     margin-bottom: 40px;
-    font-size: 18px;
     color: #a1aed4;
-    line-height: 1.625;
     @media (max-width: 991px) {
       font-size: 20px;
     }
