@@ -18,14 +18,14 @@ export default class Number extends Vue {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin: 0px 10px;
+  margin: 0 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   @media (max-width: 960px) {
     width: 30px;
     height: 30px;
-    margin: 0px 5px;
+    margin: 0 5px;
   }
 }
 .additional {

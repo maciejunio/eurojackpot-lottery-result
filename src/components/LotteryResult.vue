@@ -87,17 +87,11 @@ export default class LotteryResult extends Vue {
   }
 
   public get nextDrawsAvailable() {
-    if (this.itemsToDisplayStart > 0) {
-      return false;
-    }
-    return true;
+    return this.itemsToDisplayStart <= 0;
   }
 
   public get previousDrawsAvailable() {
-    if (this.itemsToDisplayEnd < this.draws.length) {
-      return false;
-    }
-    return true;
+    return this.itemsToDisplayEnd >= this.draws.length;
   }
 
   public get drawsToDisplay() {
